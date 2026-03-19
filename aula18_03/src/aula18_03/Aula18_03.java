@@ -1,21 +1,119 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package aula18_03;
 
-/**
- *
- * @author Laboratorio-Info
- */
+import java.util.Scanner;
+
+
 public class Aula18_03 {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        Scanner grava = new Scanner(System.in);
+        //// EXERCICIOS 06 ////////////////////////
+//        float nota1,nota2,nota3,media;
+//        int faltas;
+//        int presenca=100;
+//        int frequencia;
+//        
+//        System.out.print("Digite a nota 1 :");
+//        nota1 = grava.nextFloat();
+//        
+//        System.out.print("Digite a nota 2 :");
+//        nota2 = grava.nextFloat();
+//        
+//        System.out.print("Digite a nota 3 :");
+//        nota3 = grava.nextFloat();
+//        
+//         media = (nota1 + nota2 + nota3)/3;
+//        System.out.println("Sua media foi de: "+media);
+//        
+//        System.out.print("Digite o numero de faltas:");
+//        faltas = grava.nextInt();
+//        
+//       
+//        
+//        frequencia = presenca -(presenca * faltas/100);
+//        
+//        if(media >= 7 && media < 10 && frequencia >= 75){
+//            System.out.println("Aprovado");
+//        }
+//        else if(media >=5 && media <=6.9 && frequencia >= 75){
+//            System.out.println("Recuperacao");
+//        }
+//        else if(media < 5 || frequencia < 75){
+//            System.out.println("Reprovado");
+//        }
+//        else if(media == 10 && frequencia == 100){
+//            System.out.println("Aprovado com Destinção");
+//        }
+        
+ //=============================================================================
+     ///////// EXERCICO 07 ////////////////////////////
+//     double valorCompra;
+//     int clienteVip;
+//     int formaPagamento;
+//     double valorFinal=0;
+//     
+//     
+//     System.out.print("Digite o valor da compra: ");
+//     valorCompra = grava.nextDouble();
+//     
+//     System.out.print("Cliente Vip 1-sim 2-não\n");
+//     clienteVip = grava.nextInt();
+//     
+//     System.out.print("Qual vai ser a forma de pagamento:1-avista 2-parcelado\n");
+//     formaPagamento = grava.nextInt();
+//     
+//     if(clienteVip == 1 && formaPagamento == 1 ){
+//         valorFinal = valorCompra - (valorCompra * 20 / 100);
+//         System.out.print(valorFinal);
+//     }
+//     else if(clienteVip == 1 && formaPagamento == 2){
+//         valorFinal = valorCompra - (valorCompra * 10 / 100);
+//     }   
+//     else if(clienteVip == 2 && formaPagamento == 1 && valorCompra >= 500){
+//         valorFinal = valorCompra - (valorCompra * 15 / 100);
+//     }
+//     else if(clienteVip == 2 && formaPagamento == 2 && valorCompra > 500){
+//         valorFinal = valorCompra - (valorCompra * 5 / 100);
+//     }
+//     else{
+//    System.out.print("Sem Desconto");
+//     }
+// System.out.print(valorFinal);
+ 
+ //=============================================================================
+ ////// EXERCICIO 08 ///////////////////////////////////////////////////////
+ 
+ int cargo,horarioEntrada,diaSemana;
+ 
+ System.out.print("Qual seu cargo 1-Gerente 2-Supervisor 3-Funcionario");
+ cargo = grava.nextInt();
+ 
+ System.out.print("Qual seu horario de entrada:");
+ horarioEntrada = grava.nextInt();
+ 
+ System.out.print("Quais os dias da semana que voce acessa: 1-Dias uteis 2-Final de semana");
+ diaSemana = grava.nextInt();
+ 
+ if(cargo == 1){
+     System.out.print("Acesso Total");
+ }
+ else if(cargo == 2 && horarioEntrada >= 6 && horarioEntrada <=22){
+     System.out.print("Acesso das 6h as 22h");
+ }
+ else if(cargo == 3 && horarioEntrada >=8 && horarioEntrada <=18 && diaSemana == 1){
+     System.out.print("Acesso das 8h as 18h em dias uteis");
+ }
+ else{
+     System.out.print("Acesso Negado");
+ }
+ 
+ 
+ 
+ 
+ 
 }
+}
+    
+
