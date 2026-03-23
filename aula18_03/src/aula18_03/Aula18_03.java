@@ -128,22 +128,32 @@ public class Aula18_03 {
 // 
 //Exibir classificação clínica. 
 
-int temperatura,tosse,faltaDeAr,saturacao;
-
+int tosse,faltaDeAr,saturacao;
+double temperatura;
 System.out.print("Qual a temperatura: ");
-temperatura = grava.nextInt();
+temperatura = grava.nextDouble();
 
-System.out.print("Esta tossindo: 1-Sim\n 2-Não ");
+System.out.print("Esta tossindo:\n 1-Sim\n 2-Não ");
 tosse = grava.nextInt();
 
-System.out.print("tem falta de ar: 1-Sim\n 2-Não ");
+System.out.print("tem falta de ar:\n 1-Sim\n 2-Não ");
 faltaDeAr = grava.nextInt();
 
 System.out.print("Qual é a Saturação: ");
 saturacao = grava.nextInt();
 
-
-
+if(temperatura >= 39 && faltaDeAr == 1 && saturacao < 92 ){
+    System.out.print("Emergencia");
+}
+else if(temperatura >= 38 && tosse == 1){
+    System.out.print("Suspeita infecciosa");
+}
+else if(temperatura < 37.5){
+    System.out.print("Voce Normal!!");
+}
+else{
+    System.out.print("Fica em Monitoramento!!");
+}
 
 
 
