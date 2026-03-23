@@ -84,7 +84,7 @@ public class Aula18_03 {
  
  //=============================================================================
  ////// EXERCICIO 08 ///////////////////////////////////////////////////////
- 
+// 
  int cargo,horarioEntrada,diaSemana;
  
  System.out.print("Qual seu cargo 1-Gerente 2-Supervisor 3-Funcionario");
@@ -109,10 +109,37 @@ public class Aula18_03 {
      System.out.print("Acesso Negado");
  }
  
+  //=============================================================================
+ ////// EXERCICIO 09 ///////////////////////////////////////////////////////
  
- 
- 
- 
+// 9 - Leia:
+// 
+//Temperatura
+//Tosse (S/N)
+//Falta de ar (S/N)
+//Saturação de oxigênio
+// 
+//Regras:
+// 
+//Temp = 39 e falta de ar = S e saturação < 92 ? Emergência
+//Temp = 38 e tosse = S ? Suspeita infecciosa
+//Temp < 37.5 ? Normal
+//Caso contrário ? Monitoramento
+// 
+//Exibir classificação clínica. 
+   //=============================================================================
+ ////// EXERCICIO 10 ///////////////////////////////////////////////////////////
+// 10 - CRIE UMA CLASSE QUE SIMULE O FUNCIONAMENTO DE UM CADASTRO 
+//DE CLIENTE 
+//MENU
+//1 - inclusao
+//2 - alteracao
+//3 - exclusao
+//4 - sair 
+//Dados a serem cadastrados  somente na opção cadastrar
+//numero do cpf 
+//numero do rg
+//codigo
 }
 }
     
