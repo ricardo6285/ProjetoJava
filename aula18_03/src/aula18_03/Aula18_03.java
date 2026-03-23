@@ -85,29 +85,29 @@ public class Aula18_03 {
  //=============================================================================
  ////// EXERCICIO 08 ///////////////////////////////////////////////////////
 // 
- int cargo,horarioEntrada,diaSemana;
- 
- System.out.print("Qual seu cargo 1-Gerente 2-Supervisor 3-Funcionario");
- cargo = grava.nextInt();
- 
- System.out.print("Qual seu horario de entrada:");
- horarioEntrada = grava.nextInt();
- 
- System.out.print("Quais os dias da semana que voce acessa: 1-Dias uteis 2-Final de semana");
- diaSemana = grava.nextInt();
- 
- if(cargo == 1){
-     System.out.print("Acesso Total");
- }
- else if(cargo == 2 && horarioEntrada >= 6 && horarioEntrada <=22){
-     System.out.print("Acesso das 6h as 22h");
- }
- else if(cargo == 3 && horarioEntrada >=8 && horarioEntrada <=18 && diaSemana == 1){
-     System.out.print("Acesso das 8h as 18h em dias uteis");
- }
- else{
-     System.out.print("Acesso Negado");
- }
+// int cargo,horarioEntrada,diaSemana;
+// 
+// System.out.print("Qual seu cargo 1-Gerente 2-Supervisor 3-Funcionario");
+// cargo = grava.nextInt();
+// 
+// System.out.print("Qual seu horario de entrada:");
+// horarioEntrada = grava.nextInt();
+// 
+// System.out.print("Quais os dias da semana que voce acessa: 1-Dias uteis 2-Final de semana");
+// diaSemana = grava.nextInt();
+// 
+// if(cargo == 1){
+//     System.out.print("Acesso Total");
+// }
+// else if(cargo == 2 && horarioEntrada >= 6 && horarioEntrada <=22){
+//     System.out.print("Acesso das 6h as 22h");
+// }
+// else if(cargo == 3 && horarioEntrada >=8 && horarioEntrada <=18 && diaSemana == 1){
+//     System.out.print("Acesso das 8h as 18h em dias uteis");
+// }
+// else{
+//     System.out.print("Acesso Negado");
+// }
  
   //=============================================================================
  ////// EXERCICIO 09 ///////////////////////////////////////////////////////
@@ -127,6 +127,27 @@ public class Aula18_03 {
 //Caso contrário ? Monitoramento
 // 
 //Exibir classificação clínica. 
+
+int temperatura,tosse,faltaDeAr,saturacao;
+
+System.out.print("Qual a temperatura: ");
+temperatura = grava.nextInt();
+
+System.out.print("Esta tossindo: 1-Sim\n 2-Não ");
+tosse = grava.nextInt();
+
+System.out.print("tem falta de ar: 1-Sim\n 2-Não ");
+faltaDeAr = grava.nextInt();
+
+System.out.print("Qual é a Saturação: ");
+saturacao = grava.nextInt();
+
+
+
+
+
+
+
    //=============================================================================
  ////// EXERCICIO 10 ///////////////////////////////////////////////////////////
 // 10 - CRIE UMA CLASSE QUE SIMULE O FUNCIONAMENTO DE UM CADASTRO 
