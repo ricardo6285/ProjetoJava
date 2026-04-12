@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class replica_exercicio_consultorio {
 
     public static void main(String[] args) {
-System.setProperty("file.encoding", "UTF-8");
+       
         Scanner grava = new Scanner(System.in);
 
-        String nome;
-        int idade=0, op=0, op2=0, cpf=0;
-        int febre=0, tosse=0, dor=0, coriza=0, faltadeAr=0, diagnostico = 0;
+        int op = 0;
+        String cpf;
+        int febre = 0, tosse = 0, dor = 0, coriza = 0, faltadeAr = 0, diagnostico = 0;
 
         do {
             System.out.println("Sistema de Identificação e Prevenção de Doenças de Inverno \n (não medico");
@@ -24,10 +24,10 @@ System.setProperty("file.encoding", "UTF-8");
             switch (op) {
                 case 1:
                     System.out.println("Digite seu nome: ");
-                    nome = grava.next();
+                    grava.nextLine();
 
                     System.out.println("Digite seu cpf: ");
-                    cpf = grava.nextInt();
+                    cpf = grava.next();
 
                     System.out.println("Está com febre?\n 1-sim\n 2-não ");
                     febre = grava.nextInt();
@@ -46,6 +46,12 @@ System.setProperty("file.encoding", "UTF-8");
                     break;
 
                 case 2:
+                    if (febre == 0) {
+                        System.out.println("Cadastre ou informe sintomas primeiro!");
+                    }
+                    if (febre != 1 && febre != 2) {
+                        System.out.println("Opção inválida");
+                    }
                     if (faltadeAr == 1) {
                         System.out.println("Situação mais grave");
                         diagnostico = 1;
@@ -62,16 +68,22 @@ System.setProperty("file.encoding", "UTF-8");
                     break;
 
                 case 3:
-                    if (diagnostico == 1) {
+                switch (diagnostico) {
+                    case 1:
                         System.out.println("Procure um medico");
-                    } else if (diagnostico == 2) {
+                        break;
+                    case 2:
                         System.out.println("Beber bastante liquido");
-                    } else if (diagnostico == 3) {
+                        break;
+                    case 3:
                         System.out.println("Evitar locais fechados");
-                    } else {
+                        break;
+                    default:
                         System.out.println("Manter higiene");
-                    }
+                        break;
+                }
                     break;
+
                 case 4:
                     System.out.println("Está com febre? 1-sim\n 2-não ");
                     febre = grava.nextInt();
@@ -89,7 +101,7 @@ System.setProperty("file.encoding", "UTF-8");
                     faltadeAr = grava.nextInt();
                     break;
             }
-        } while (op != 4);
+        } while (op != 5);
 
     }
 
