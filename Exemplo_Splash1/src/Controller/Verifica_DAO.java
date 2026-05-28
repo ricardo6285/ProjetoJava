@@ -8,6 +8,7 @@ package Controller;
 import static View.Login_GUI.cont;
 import static View.Login_GUI.login_txt;
 import static View.Login_GUI.senha_txt;
+import View.Menu_GUI;
 import javax.swing.JOptionPane;
 
 /**
@@ -26,9 +27,12 @@ public class Verifica_DAO {
         }else{
             if(login.equals("ETEC")&& senha.equals("a123")){
             JOptionPane.showMessageDialog(null,"Seja bem-vindo ao Sistema!!");
-            System.exit(0);
+             new Menu_GUI().setVisible(true);
+             
             }else{
                 JOptionPane.showMessageDialog(null,"Login ou senha errada Tente novamente!!");
+                login_txt.setText("");
+                senha_txt.setText("");
                 cont++;
             }
         }
